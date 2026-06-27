@@ -5,12 +5,12 @@ import API from '../services/api';
 
 // Your Firebase configuration – use the same config from firebase-messaging-sw.js
 const firebaseConfig = {
-  apiKey: "AIzaSyDGj46tf6F8UZPprwnwgG3irtnzmsmRcqs",
-  authDomain: "leftover-lunch.firebaseapp.com",
-  projectId: "leftover-lunch",
-  storageBucket: "leftover-lunch.firebasestorage.app",
-  messagingSenderId: "589099860742",
-  appId: "1:589099860742:web:67457f89df9e78d0a41487",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase App
