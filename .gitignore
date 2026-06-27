@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment files (SECRETS – NEVER COMMIT)
+server/.env
+client/.env
+
+# Firebase service account
+server/firebase-service-account.json
+
+# Build output
+client/dist/
+server/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Environment variables examples are okay to commit
+# but keep the real .env out.
